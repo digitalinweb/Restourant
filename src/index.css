@@ -1,0 +1,51 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+
+  section[id] {
+    scroll-margin-top: 6rem;
+  }
+
+  body {
+    @apply bg-cream font-sans text-ink-500 antialiased;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4 {
+    @apply font-serif text-ink-800;
+  }
+
+  :focus-visible {
+    @apply outline-none ring-2 ring-primary-400 ring-offset-2 ring-offset-cream;
+  }
+}
+
+@layer components {
+  .btn {
+    @apply inline-flex items-center justify-center gap-2 rounded-pill px-7 py-3.5 text-sm font-semibold tracking-wide transition duration-300;
+  }
+  .btn-primary {
+    @apply btn bg-primary text-white shadow-pill hover:bg-secondary-600 hover:shadow-card-lg;
+  }
+  .btn-secondary {
+    @apply btn border border-ink-200 bg-transparent text-ink-800 hover:border-ink-800 hover:bg-ink-800 hover:text-white;
+  }
+  .btn-inverse {
+    @apply btn bg-white text-ink-800 hover:bg-primary hover:text-white;
+  }
+
+  .eyebrow {
+    @apply inline-flex items-center gap-2 rounded-pill border border-primary-200 bg-white/70 px-4 py-1.5 text-[11px] font-semibold uppercase tracking-[0.18em] text-primary-600;
+  }
+
+  .section-wrap {
+    @apply mx-auto w-full max-w-7xl px-5 sm:px-8 lg:px-10;
+  }
+}

@@ -1,0 +1,41 @@
+export const reservation = {
+  eyebrow: 'Reservations',
+  titleLead: 'Book your table, or let us',
+  titleAccent: 'cater your event',
+  description:
+    'Tell us what you are planning. Our events team replies within one business day with a tailored menu and quote.',
+  eventTypes: [
+    { value: 'table', label: 'Table reservation' },
+    { value: 'wedding', label: 'Wedding catering' },
+    { value: 'corporate', label: 'Corporate event' },
+    { value: 'private', label: 'Private dining' },
+  ],
+  guestRange: '20–40 guests',
+  timeSlots: ['11:30 AM', '1:00 PM', '5:00 PM', '7:30 PM'],
+  fields: {
+    name: 'Full name',
+    email: 'Email address',
+    phone: 'Phone number',
+    date: 'Preferred date',
+    guests: 'Number of guests',
+    notes: 'Anything we should know? (allergies, theme, venue access…)',
+  },
+  submitLabel: 'Request My Booking',
+  successTitle: 'Request received',
+  successText: 'Our events team will get back to you within one business day. Check your inbox for a confirmation.',
+  trustNotes: [
+    'No prepayment required',
+    'Free menu tasting for 50+ guests',
+    'Cancel free up to 14 days before',
+  ],
+  defaults: {
+    name: '',
+    email: '',
+    phone: '',
+    date: '',
+    guests: '40',
+    notes: '',
+    eventType: 'table',
+    slot: '7:30 PM',
+  },
+}
